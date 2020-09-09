@@ -2,9 +2,6 @@
 @import "global";
 
 .header {
-	&__top {
-	}
-
 	&__top-inner {
 		display: flex;
 		justify-content: space-between;
@@ -119,5 +116,66 @@
 		top: 17px;
 		background-color: transparent;
 		cursor: pointer;
+	}
+}
+
+// PRODUCTS ==================================================
+
+.products {
+	padding: 121px 0 112px;
+	background-color: $light-grey;
+	&__inner {
+	}
+
+	&__inner-btn {
+		text-align: center;
+		margin-bottom: 60px;
+		& button {
+			font-size: 14px;
+			font-weight: 500;
+			border: none;
+			color: $bg-dark;
+			padding: 12px 21px;
+			background-color: #fff;
+			& + button {
+				margin-left: 6px;
+			}
+		}
+	}
+
+	&__inner-box {
+	}
+}
+.container-fluid {
+}
+.product {
+	&__item {
+	}
+
+	&__item-mig {
+	}
+
+	&__item-content {
+	}
+
+	&__item-name {
+	}
+
+	&__item-title {
+	}
+
+	&__item-category {
+	}
+
+	&__item-price {
+	}
+
+	&__item-info {
+	}
+
+	&__item-autor {
+	}
+
+	&__item-star {
 	}
 }

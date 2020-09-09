@@ -17,7 +17,7 @@ let gulp = require('gulp'),
 
 gulp.task('sass', function () {
 
-	return gulp.src('app/scss/style.scss')
+	return gulp.src('app/scss/**/*.scss')
 		.pipe(sass({ outputStyle: 'compressed' }))// or expanded
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(autoprefixer({
@@ -48,7 +48,8 @@ gulp.task('browser-sync', function () {
 gulp.task('script', function () {
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.js',
-		'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+		'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+		'node_modules/mixitup/dist/mixitup.js'
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -78,7 +79,7 @@ gulp.task('imagemin', function () {
 		.pipe(browserSync.reload({ stream: true }))
 });
 gulp.task('webp', function () {
-	return gulp.src('#src/**/*.+(jpg,png,gif,svg,ico)')
+	return gulp.src('#src/**/*.{jpg,png,gif,svg,ico}')
 		.pipe(webp({
 			quality: 70
 		}))
@@ -99,7 +100,7 @@ gulp.task('ttf2woff2', function () {
 
 
 gulp.task('watch', function () {
-	gulp.watch('app/scss/style.scss', gulp.parallel('sass'));
+	gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
 	gulp.watch('app/*.html', gulp.parallel('html'));
 	gulp.watch('app/js/*.js', gulp.parallel('js'));
 	gulp.watch('#src/**/*.{jpg,png,svg,gif,ico,webp}', gulp.parallel('imagemin'));
