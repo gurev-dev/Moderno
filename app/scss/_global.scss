@@ -9,6 +9,7 @@ html {
 a {
 	display: inline-block;
 	text-decoration: none;
+	color: $slate;
 }
 ul,
 li {
@@ -37,7 +38,7 @@ body {
 	line-height: 60px;
 	color: $bg-dark;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 @media (max-width: 720px) {
 	.container-fluid {

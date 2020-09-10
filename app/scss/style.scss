@@ -124,7 +124,10 @@
 .products {
 	padding: 121px 0 112px;
 	background-color: $light-grey;
-	&__inner {
+	&__inner-box {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__inner-btn {
@@ -137,45 +140,114 @@
 			color: $bg-dark;
 			padding: 12px 21px;
 			background-color: #fff;
+			cursor: pointer;
 			& + button {
 				margin-left: 6px;
 			}
+			&.mixitup-control-active {
+				background-color: $tomato;
+				color: #fff;
+				outline: none;
+			}
 		}
 	}
-
-	&__inner-box {
-	}
-}
-.container-fluid {
 }
 .product {
 	&__item {
+		max-width: 442px;
+		width: 100%;
+		box-shadow: 0px 1px 2px 0 rgba(205, 214, 222, 0.75);
+		margin-bottom: 30px;
 	}
 
 	&__item-mig {
+		min-height: 250px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
 	}
 
 	&__item-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 30px;
+		min-height: 90px;
+		background-color: #fff;
+		border-bottom: 1px solid #e7ecf2;
 	}
 
 	&__item-name {
+		min-width: 310px;
+		font-weight: 500;
 	}
 
 	&__item-title {
+		font-size: 18px;
+		line-height: 35px;
+		color: $bg-dark;
 	}
 
 	&__item-category {
+		display: block;
+		font-size: 14px;
+		color: $booger;
 	}
 
 	&__item-price {
+		font-size: 20px;
+		color: $bg-dark;
 	}
 
 	&__item-info {
+		min-height: 70px;
+		padding: 10px 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
 	}
 
 	&__item-autor {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 500;
+		.avatar {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: inline-block;
+			margin-right: 14px;
+		}
 	}
 
 	&__item-star {
+		color: #e1e6e9;
+		font-size: 12px;
+		& span {
+			color: $bg-dark;
+		}
+	}
+}
+.products__bottom-btn {
+	text-align: center;
+	button {
+		margin: 45px 5px 0;
+		box-shadow: 0px 1px 3px 0 rgba(204, 216, 228, 0.75);
+		border: none;
+		background-color: #fff;
+		color: $bg-dark;
+		padding: 20px 30px;
+		cursor: pointer;
+		&.mixitup-control-active {
+			background-color: $tomato;
+			color: #fff;
+			outline: none;
+		}
 	}
 }

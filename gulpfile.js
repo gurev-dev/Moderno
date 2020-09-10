@@ -49,9 +49,18 @@ gulp.task('script', function () {
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.js',
 		'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-		'node_modules/mixitup/dist/mixitup.js'
+		'node_modules/mixitup/dist/mixitup.js',
 	])
 		.pipe(concat('libs.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('app/js'))
+});
+
+gulp.task('script', function () {
+	return gulp.src([
+		'app/js/main.js',
+	])
+		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('app/js'))
 });
@@ -72,7 +81,7 @@ gulp.task('imagemin', function () {
 		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,
-			optimizationLevel: 3,  //0 or 7
+			optimizationLevel: 2,  //0 or 7
 			svgoPlugins: [{ removeViewBox: false }]
 		}))
 		.pipe(gulp.dest('app/images/'))
