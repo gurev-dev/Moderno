@@ -84,7 +84,7 @@ gulp.task('imagemin', function () {
 		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,
-			optimizationLevel: 2,  //0 or 7
+			optimizationLevel: 3,  //0 or 7
 			svgoPlugins: [{ removeViewBox: false }]
 		}))
 		.pipe(gulp.dest('app/images/'))

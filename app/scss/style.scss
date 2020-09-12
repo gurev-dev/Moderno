@@ -336,7 +336,6 @@
 	&__item-title {
 		color: #fff;
 		font-size: 24px;
-		font-weight: 500;
 		margin-bottom: 26px;
 		transition: all 0.4s;
 	}
@@ -346,5 +345,48 @@
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 24px;
+	}
+}
+
+// AUTOR  ================================================
+
+.autor {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 761px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__wrapper {
+		max-width: 653px;
+		width: 100%;
+		min-height: 216px;
+		background-color: $booger;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 70px 60px;
+	}
+
+	&__text {
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 400;
+		max-width: 300px;
+		color: #fff;
+		& span {
+			font-weight: 700;
+		}
+	}
+
+	&__btn {
+		background-color: #fff;
+		color: $bg-dark;
+		font-size: 18px;
+		line-height: 2;
+		font-weight: 400;
+		padding: 13px 40px;
+		text-align: center;
 	}
 }
