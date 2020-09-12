@@ -1,6 +1,8 @@
 @import "vars";
 @import "global";
 
+// HEADER ===================================================
+
 .header {
 	&__top-inner {
 		display: flex;
@@ -214,6 +216,7 @@
 		align-items: center;
 		font-size: 14px;
 		font-weight: 500;
+		min-width: 245px;
 		.avatar {
 			width: 30px;
 			height: 30px;
@@ -229,6 +232,7 @@
 	&__item-star {
 		color: #e1e6e9;
 		font-size: 12px;
+		white-space: nowrap;
 		& span {
 			color: $bg-dark;
 		}
@@ -248,6 +252,35 @@
 			background-color: $tomato;
 			color: #fff;
 			outline: none;
+		}
+	}
+}
+
+// SLIDER ================================================================
+
+.slider {
+	padding: 120px 0;
+}
+.slick-dots {
+	text-align: center;
+	margin-top: 60px;
+	& li {
+		display: inline-block;
+		margin: 0 3px;
+		&.slick-active {
+			button {
+				background-color: $booger;
+			}
+		}
+		& button {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border: none;
+			background-color: #e8e8e8;
+			font-size: 0;
+			outline: none;
+			cursor: pointer;
 		}
 	}
 }

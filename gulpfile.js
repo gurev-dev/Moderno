@@ -32,7 +32,7 @@ gulp.task('html', function () {
 		.pipe(browserSync.reload({ stream: true }))
 });
 gulp.task('js', function () {
-	return gulp.src('app/*.js')
+	return gulp.src('app/**/*.js')
 		.pipe(browserSync.reload({ stream: true }))
 });
 
@@ -50,6 +50,7 @@ gulp.task('script', function () {
 		'node_modules/slick-carousel/slick/slick.js',
 		'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 		'node_modules/mixitup/dist/mixitup.js',
+		'node_modules/rateyo/src/jquery.rateyo.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -63,13 +64,15 @@ gulp.task('script', function () {
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('app/js'))
+		.pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('style', function () {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/slick-carousel/slick/slick.css',
-		'node_modules/magnific-popup/dist/magnific-popup.css'
+		'node_modules/magnific-popup/dist/magnific-popup.css',
+		'node_modules/rateyo/src/jquery.rateyo.css',
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(cssmin())
@@ -85,7 +88,7 @@ gulp.task('imagemin', function () {
 			svgoPlugins: [{ removeViewBox: false }]
 		}))
 		.pipe(gulp.dest('app/images/'))
-		.pipe(browserSync.reload({ stream: true }))
+	// .pipe(browserSync.reload({ stream: true }))
 });
 gulp.task('webp', function () {
 	return gulp.src('#src/**/*.{jpg,png,gif,svg,ico}')
@@ -113,7 +116,7 @@ gulp.task('watch', function () {
 	gulp.watch('app/*.html', gulp.parallel('html'));
 	gulp.watch('app/js/*.js', gulp.parallel('js'));
 	gulp.watch('#src/**/*.{jpg,png,svg,gif,ico,webp}', gulp.parallel('imagemin'));
-	gulp.watch('#src/**/*.+(jpg,png,gif,svg,ico)', gulp.parallel('webp'));
+	gulp.watch('#src/**/*.{jpg,png,gif,svg,ico}', gulp.parallel('webp'));
 });
 
-gulp.task('default', gulp.parallel('style', 'script', 'sass', 'ttf2woff', 'ttf2woff2', 'imagemin', 'webp', 'browser-sync', 'watch',))
+gulp.task('default', gulp.parallel('script', 'style', 'sass', 'ttf2woff', 'ttf2woff2', 'imagemin', 'webp', 'browser-sync', 'watch',))
