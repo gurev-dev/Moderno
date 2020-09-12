@@ -390,3 +390,32 @@
 		text-align: center;
 	}
 }
+
+//   TUTORIALS  =========================================================
+
+.tutorials {
+	padding: 66px 0 121px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__images {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 270px;
+	}
+
+	&__text {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 2.5;
+		color: $bg-dark;
+		background-color: #f8f8f8;
+		text-align: center;
+		padding: 18px 70px;
+	}
+}
