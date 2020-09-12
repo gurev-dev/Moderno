@@ -402,11 +402,16 @@
 		flex-wrap: wrap;
 	}
 
+	&__item {
+		max-width: 370px;
+		width: 100%;
+	}
+
 	&__images {
+		min-height: 270px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		min-height: 270px;
 	}
 
 	&__text {
@@ -416,6 +421,6 @@
 		color: $bg-dark;
 		background-color: #f8f8f8;
 		text-align: center;
-		padding: 18px 70px;
+		padding: 18px 60px;
 	}
 }
