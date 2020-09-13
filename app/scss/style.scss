@@ -75,6 +75,15 @@
 	background-size: cover;
 	background-position: center;
 	min-height: 536px;
+	&.search__product-page {
+		min-height: 230px;
+		.search__inner {
+			padding: 60px 0 68px;
+			&-text {
+				margin-bottom: 24px;
+			}
+		}
+	}
 	&__inner {
 		text-align: center;
 		color: #fff;
@@ -89,7 +98,6 @@
 
 	&__inner-text {
 		font-size: 20px;
-		font-weight: 500;
 		margin-bottom: 50px;
 	}
 
@@ -431,8 +439,6 @@
 
 .footer {
 	background-color: $bg-dark;
-	&__content {
-	}
 
 	&__inner {
 		display: flex;
@@ -606,4 +612,84 @@
 .link-linkedin {
 	background-position: -56px -0;
 	border-radius: 3px;
+}
+
+// PRODUCT PAGE  ==============================================
+
+.product-page {
+	&__inner {
+		display: flex;
+	}
+
+	&__aside {
+		margin-right: 30px;
+	}
+
+	&__content {
+	}
+
+	&__filter {
+	}
+
+	&__items {
+	}
+}
+.aside__item {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	padding: 0 32px 32px;
+	margin-bottom: 30px;
+	width: 270px;
+}
+.category {
+	&__list {
+		padding-top: 10px;
+		li {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0 10px 20px;
+			position: relative;
+			&::before {
+				content: "\f105";
+				font-family: "icomoon";
+				color: #8bc34a;
+				font-size: 14px;
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+	a {
+		color: $bg-dark;
+		font-size: 15px;
+	}
+	span {
+		color: #90a4ae;
+		font-size: 15px;
+		font-weight: 400;
+		margin-left: 10px;
+	}
+}
+.aside {
+	&__title {
+		border-bottom: 1px solid #d7d7d7;
+		color: $bg-dark;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 24px 0 19px;
+	}
+}
+.price-range {
+}
+.top-sellers {
+}
+.top-selects {
+	&__link {
+	}
+}
+.pagination {
+	&__list {
+	}
+}
+.active {
 }
