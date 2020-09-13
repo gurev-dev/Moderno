@@ -115,7 +115,7 @@
 		position: absolute;
 		border: none;
 		right: 13px;
-		top: 17px;
+		top: 15px;
 		background-color: transparent;
 		cursor: pointer;
 	}
@@ -408,6 +408,7 @@
 	}
 
 	&__images {
+		display: block;
 		min-height: 270px;
 		background-size: cover;
 		background-position: center;
@@ -424,3 +425,5 @@
 		padding: 18px 60px;
 	}
 }
+
+// FOOTER  ===============================================================
