@@ -14,7 +14,21 @@ $(function () {
 		arrows: false
 	});
 
-	var mixer = mixitup('.products__inner-box');
+
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		grid: true,
+		min: 0,
+		max: 1000,
+		from: 0,
+		to: 600,
+		prefix: "$"
+	});
+
+	if ($("div").is(".mix")) {
+		var mixer = mixitup('.products__inner-box');
+	}
+	$('.products__inner-box').mixItUp();
 
 
 });   
