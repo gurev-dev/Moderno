@@ -38,6 +38,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-weight: 500;
+	overflow-x: hidden;
 }
 .page-content {
 	background-color: $light-grey;
@@ -96,9 +97,15 @@ body {
 		}
 	}
 }
-
-@media (max-width: 720px) {
-	.container-fluid {
-		padding: 0 15px;
+.angle-right {
+	position: relative;
+	padding-left: 15px;
+	&::before {
+		content: "\f105";
+		@include icon;
+		position: absolute;
+		left: 0;
+		color: $booger;
+		font-size: 14px;
 	}
 }
