@@ -1666,4 +1666,88 @@ button.icon-unsorted {
 	background-color: $slate;
 }
 
+// ERROR PAGE 404 ======================================================
+
+.error-page {
+	margin-bottom: 155px;
+	&__inner {
+		border: 1px solid #d7d7d7;
+		max-width: 100%;
+	}
+
+	&__title-page {
+		width: 100%;
+		border-bottom: 1px solid #d7d7d7;
+		background-color: #fff;
+		font-size: 24px;
+		font-weight: 500;
+		color: #263238;
+		line-height: 24px;
+		padding: 21px 28px;
+	}
+
+	&__box {
+		background-color: $booger;
+		text-align: center;
+	}
+
+	&__404 {
+		font-family: "Open Sans", sans-serif;
+		font-size: 300px;
+		font-weight: 800;
+		color: #fff;
+		padding-top: 100px;
+		position: relative;
+		margin-right: 155px;
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url(../images/man-404.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 155px;
+			height: 300px;
+			margin-left: 15px;
+			bottom: 32px;
+		}
+	}
+
+	&__wrap {
+		max-width: 535px;
+		width: 100%;
+		margin: 0 auto 40px;
+	}
+
+	&__title {
+		font-family: "Open Sans", sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		letter-spacing: 6px;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-family: "Raleway", sans-serif;
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+	}
+
+	&__link {
+		font-family: "Raleway", sans-serif;
+		border: 2px solid #fff;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		padding: 10px 30px;
+		margin-bottom: 98px;
+	}
+}
+
+// =======================
+
 @import "media";
