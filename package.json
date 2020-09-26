@@ -9,6 +9,7 @@
 	"author": "Stanislav Gurev",
 	"license": "ISC",
 	"devDependencies": {
+		"@fancyapps/fancybox": "^3.5.7",
 		"browser-sync": "^2.26.12",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
@@ -22,7 +23,6 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-webp": "^4.0.1",
 		"ion-rangeslider": "^2.3.1",
-		"magnific-popup": "^1.1.0",
 		"mixitup": "^3.3.1",
 		"normalize.css": "^8.0.1",
 		"rateyo": "^2.3.5",
