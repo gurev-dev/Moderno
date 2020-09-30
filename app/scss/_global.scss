@@ -34,6 +34,9 @@ li {
 	padding: 0;
 	list-style: none;
 }
+p {
+	margin: 0;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -108,4 +111,15 @@ body {
 		color: $booger;
 		font-size: 14px;
 	}
+}
+
+.head-title__page {
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+	background-color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	color: #263238;
+	line-height: 24px;
+	padding: 21px 28px;
 }

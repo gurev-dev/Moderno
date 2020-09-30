@@ -139,7 +139,7 @@
 		position: absolute;
 		@include icon;
 		font-size: 16px;
-		color: #707070;
+		color: $silver-grey;
 		top: 4px;
 		right: 0;
 	}
@@ -320,7 +320,7 @@
 	}
 	&-data {
 		font-size: 10px;
-		color: #707070;
+		color: $silver-grey;
 	}
 }
 .circle__item {
@@ -348,6 +348,8 @@
 .header__btn-menu--inner {
 	display: none;
 }
+
+// HEADER END =====================================================
 
 // POPUP-LOGIN ====================================================
 
@@ -440,7 +442,9 @@
 	color: #fff;
 }
 
-//  SEARCH =====================================================
+// POPUP-LOGIN END=================================================
+
+//  SEARCH ===========================================================
 
 .search {
 	background-repeat: no-repeat;
@@ -502,7 +506,9 @@
 	}
 }
 
-// PRODUCTS ==================================================
+//  SEARCH END =========================================================
+
+// PRODUCTS ============================================================
 
 .products {
 	padding: 121px 0 112px;
@@ -637,7 +643,9 @@
 	}
 }
 
-// SLIDER ================================================================
+// PRODUCTS END =========================================================
+
+// SLIDER ===============================================================
 
 .slider {
 	padding: 120px 0;
@@ -666,7 +674,9 @@
 	}
 }
 
-// ADVENTAGES  ===========================================
+// SLIDER END ===========================================================
+
+// ADVENTAGES  ==========================================================
 
 .advantages {
 	background-color: $bg-dark;
@@ -729,7 +739,9 @@
 	}
 }
 
-// AUTOR  ================================================
+// ADVENTAGES END =======================================================
+
+// AUTOR  ===============================================================
 
 .autor {
 	background-size: cover;
@@ -772,6 +784,8 @@
 	}
 }
 
+// AUTOR END ============================================================
+
 //   TUTORIALS  =========================================================
 
 .tutorials {
@@ -807,7 +821,9 @@
 	}
 }
 
-// FOOTER  ===============================================================
+//   TUTORIALS END =====================================================
+
+// FOOTER  ==============================================================
 
 .footer {
 	background-color: $bg-dark;
@@ -987,7 +1003,9 @@
 	border-radius: 3px;
 }
 
-// PRODUCT PAGE  ==============================================
+// FOOTER END ===========================================================
+
+// PRODUCT PAGE  ========================================================
 
 .product-page {
 	&__inner {
@@ -1222,7 +1240,7 @@
 }
 
 .product-page__filter-sort {
-	color: #707070;
+	color: $silver-grey;
 }
 button.icon-sort-amount-desc {
 	font-size: 14px;
@@ -1231,7 +1249,7 @@ button.icon-sort-amount-desc {
 }
 button.icon-unsorted {
 	font-size: 18px;
-	color: #707070;
+	color: $silver-grey;
 	padding-left: 13px;
 }
 .icon-th-large,
@@ -1339,7 +1357,9 @@ button.icon-unsorted {
 	}
 }
 
-//  ABOUT-PRODUCT =========================================
+// PRODUCT PAGE END =====================================================
+
+//  ABOUT-PRODUCT =======================================================
 
 .about-product {
 	&__inner {
@@ -1374,7 +1394,7 @@ button.icon-unsorted {
 
 	&__text {
 		font-size: 16px;
-		color: #707070;
+		color: $silver-grey;
 		line-height: 24px;
 		margin-bottom: 45px;
 	}
@@ -1400,6 +1420,61 @@ button.icon-unsorted {
 		& + a {
 			margin-left: 3px;
 		}
+	}
+}
+.about-product__form {
+	.jq-selectbox {
+		width: 82px;
+	}
+	.jq-selectbox__select {
+		height: 27px;
+		padding: 0 25px 7px 10px;
+		border: 1px solid #d3d3d3;
+		border-bottom-color: #d3d3d3;
+		border-radius: 0px;
+		background: #fff;
+		box-shadow: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25px;
+		color: #70838d;
+		text-align: center;
+		&:hover {
+			background: linear-gradient(#f6f6f6, #ddffca);
+		}
+	}
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+	.jq-selectbox__trigger-arrow {
+		top: 0px;
+		right: 15px;
+		border: none;
+		&::before {
+			content: "\f0d7";
+			@include icon;
+			font-size: 13px;
+			color: $booger;
+		}
+	}
+	.jq-selectbox li {
+		color: #70838d;
+		padding: 3px 10px 3px;
+		&:hover {
+			background-color: $booger;
+			color: #fff;
+		}
+	}
+	.jq-selectbox li.selected {
+		color: #fff;
+	}
+	.jq-selectbox__dropdown {
+		font-size: 13px;
+		top: 24px;
+		font-family: "Roboto", sans-serif;
+		line-height: 18px;
+		font-weight: 400;
 	}
 }
 .live {
@@ -1480,7 +1555,7 @@ button.icon-unsorted {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 36px;
-	color: #707070;
+	color: $silver-grey;
 	column-count: 2;
 }
 .more-product {
@@ -1599,12 +1674,14 @@ button.icon-unsorted {
 	font-weight: 700;
 	color: $bg-dark;
 	& span {
-		color: #707070;
+		color: $silver-grey;
 		font-size: 16px;
 		font-weight: 300;
 		padding-left: 5px;
 	}
 	&::before {
+		content: "\f07a";
+		@include icon;
 		color: #a6b5bb;
 		font-size: 20px;
 		padding-right: 5px;
@@ -1629,7 +1706,7 @@ button.icon-unsorted {
 .profile__info-link {
 	border: 1px solid #ccc;
 	background-color: #fff;
-	color: #707070;
+	color: $silver-grey;
 	font-size: 13px;
 	font-weight: 400;
 	width: 92px;
@@ -1666,24 +1743,15 @@ button.icon-unsorted {
 	background-color: $slate;
 }
 
-// ERROR PAGE 404 ======================================================
+//  ABOUT-PRODUCT END ===================================================
+
+// ERROR PAGE 404 =======================================================
 
 .error-page {
 	margin-bottom: 155px;
 	&__inner {
 		border: 1px solid #d7d7d7;
 		max-width: 100%;
-	}
-
-	&__title-page {
-		width: 100%;
-		border-bottom: 1px solid #d7d7d7;
-		background-color: #fff;
-		font-size: 24px;
-		font-weight: 500;
-		color: #263238;
-		line-height: 24px;
-		padding: 21px 28px;
 	}
 
 	&__box {
@@ -1747,6 +1815,602 @@ button.icon-unsorted {
 		margin-bottom: 98px;
 	}
 }
+
+// ERROR PAGE 404  END===================================================
+
+// CONTACT PAGE =========================================================
+
+.contact-us {
+	margin-bottom: 100px;
+	&__wrap {
+		border: 1px solid #d7d7d7;
+	}
+	&__inner {
+		max-width: 100%;
+		padding: 33px 40px 15px;
+		background-color: #fff;
+	}
+
+	&__map {
+		margin-bottom: 60px;
+		& iframe {
+			max-width: 1091px;
+			width: 100%;
+			height: 415px;
+		}
+	}
+
+	&__box {
+		display: flex;
+	}
+
+	&__contacts {
+		max-width: 310px;
+		width: 100%;
+		margin-right: 40px;
+	}
+
+	&__address {
+		margin-bottom: 25px;
+	}
+
+	&__phone {
+		margin-bottom: 25px;
+	}
+}
+.contacts {
+	&__title {
+		font-size: 20px;
+		color: $bg-dark;
+		padding-left: 35px;
+		padding-bottom: 18px;
+		position: relative;
+		margin-bottom: 27px;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 35px;
+			width: 45px;
+			height: 4px;
+			background-color: $booger;
+		}
+		&::before {
+			content: "\f041";
+			@include icon;
+			color: $booger;
+			position: absolute;
+			left: 0;
+			font-size: 24px;
+		}
+	}
+
+	&__address {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $silver-grey;
+		padding-left: 35px;
+	}
+}
+.contacts-form {
+	width: 100%;
+	&__title {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 22px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	& input {
+		display: inline-block;
+		max-width: 352px;
+		width: 100%;
+		background-color: #f1f4f5;
+		color: $silver-grey;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		padding: 10px 18px;
+		border: none;
+		&::placeholder {
+			color: #7a7a7a;
+		}
+	}
+	& textarea {
+		width: 100%;
+		height: 195px;
+		background-color: #f1f4f5;
+		color: $silver-grey;
+		border: none;
+		padding: 13px 18px;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 24px;
+		resize: none;
+		&::placeholder {
+			color: #7a7a7a;
+		}
+	}
+	& button {
+		width: 190px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: center;
+		color: #fff;
+		background-color: $booger;
+		padding: 14px 0;
+		border: none;
+		text-transform: uppercase;
+	}
+}
+.contacts__title-phone::before {
+	content: "\f095";
+}
+.contacts__title-email::before {
+	content: "\f095";
+}
+
+// CONTACT PAGE END ====================================================
+
+// UPLOAD PRODUCT PAGE =================================================
+
+.upload {
+	margin-bottom: 110px;
+	&__inner {
+		border: 1px solid #d7d7d7;
+		background-color: #fff;
+	}
+
+	&__inner-content {
+		margin-bottom: 40px;
+		padding: 0 45px 0;
+	}
+
+	&__inner-line {
+		margin-bottom: 25px;
+		display: flex;
+		&:first-child {
+			margin-top: 45px;
+		}
+	}
+	label {
+		font-size: 15px;
+		font-weight: 400;
+		color: #444;
+		min-width: 175px;
+		padding-top: 10px;
+		padding-right: 20px;
+		span {
+			color: $booger;
+		}
+	}
+
+	input,
+	textarea {
+		background-color: #f9f9f9;
+		border: 1px solid #d7d7d7;
+		width: 100%;
+		height: 40px;
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $silver-grey;
+		padding: 0 17px;
+	}
+	textarea {
+		padding: 6px 17px;
+		height: 150px;
+		resize: none;
+	}
+	button {
+		width: 125px;
+		font-size: 15px;
+		background-color: $booger;
+		color: #fff;
+		border: none;
+		padding: 15px 5px;
+		margin: 20px 0 25px 171px;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+.upload__form {
+	.jq-file {
+		width: 100%;
+		border-radius: 0px;
+		box-shadow: none;
+		background-color: #f9f9f9;
+		border: 1px solid #d7d7d7;
+		height: 40px;
+		display: block;
+	}
+	.jq-file__name {
+		width: 100%;
+		height: 40px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 40px;
+		font-family: "Roboto", sans-serif;
+		color: $silver-grey;
+		padding: 0 17px;
+		padding-left: 111px;
+		border: none;
+		border-bottom-color: transparent;
+		border-radius: 0px;
+		background: transparent;
+		box-shadow: none;
+	}
+	.jq-file__browse {
+		top: 5px;
+		right: auto;
+		left: 8px;
+		padding: 0 12px;
+		background: #fff;
+		color: #444;
+		border: 1px solid #d7d7d7;
+		border-radius: 0;
+		box-shadow: none;
+		text-shadow: none;
+		font-size: 12px;
+		line-height: 26px;
+		font-family: "Roboto", sans-serif;
+		&:hover {
+			background: linear-gradient(#f6f6f6, #ddffca);
+		}
+	}
+	.jq-selectbox {
+		width: 100%;
+	}
+	.jq-selectbox__select {
+		height: 40px;
+		padding: 0 45px 0 17px;
+		border: 1px solid #d7d7d7;
+		border-bottom-color: #d7d7d7;
+		border-radius: 0px;
+		background: #f9f9f9;
+		box-shadow: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 12px;
+		line-height: 40px;
+		color: $silver-grey;
+		text-shadow: none;
+		&:hover {
+			background: linear-gradient(#f6f6f6, #ddffca);
+		}
+	}
+	.jq-selectbox__trigger-arrow {
+		border: none;
+		font-size: 15px;
+		line-height: 40px;
+		top: 0;
+		right: 20px;
+		&::before {
+			content: "\f0d7";
+			@include icon;
+			color: #444;
+		}
+	}
+	.jq-selectbox__trigger {
+		border: none;
+	}
+	.jq-selectbox li {
+		font-size: 12px;
+		color: $silver-grey;
+		font-family: "Roboto", sans-serif;
+		line-height: 18px;
+		&:hover {
+			background-color: $booger;
+			color: #fff;
+		}
+	}
+	.jq-selectbox li.selected {
+		color: #fff;
+	}
+}
+
+// UPLOAD PRODUCT PAGE END =============================================
+
+// SETTINGS PAGE =======================================================
+
+.about-product__tabs.settings__tabs {
+	display: flex;
+	max-width: 1170px;
+	margin-bottom: 155px;
+	.tabs {
+		max-width: 270px;
+		width: 100%;
+		margin-right: 30px;
+		text-align-last: left;
+		display: block;
+		border: none;
+		span {
+			display: block;
+			border: 1px solid #d7d7d7;
+			padding: 17px 17px 17px 50px;
+			font-size: 14px;
+			&.active {
+				border-bottom: 3px solid #8bc34a;
+				&::before {
+					color: $booger;
+				}
+			}
+			& + span {
+				border-top: none;
+			}
+			&::before {
+				left: 25px;
+				color: #696969;
+			}
+		}
+	}
+	.tabs__content {
+		width: 100%;
+		padding: 0;
+		border: none;
+	}
+	.upload__inner-line {
+		margin-bottom: 20px;
+		align-items: center;
+		label {
+			min-width: 255px;
+			font-size: 15px;
+			font-weight: 400;
+		}
+		input {
+			width: 100%;
+			height: 40px;
+			border: 1px solid #d7d7d7;
+			background-color: #f9f9f9;
+			font-size: 14px;
+			color: $silver-grey;
+			padding: 10px 15px;
+			outline: none;
+		}
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+	.upload__inner-content {
+		margin-bottom: 80px;
+		button {
+			width: 108px;
+			margin-left: 255px;
+			margin-top: 5px;
+			font-size: 15px;
+			color: #fff;
+			background-color: $booger;
+			border: none;
+			padding: 15px 5px;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+	.upload__form .jq-selectbox__select {
+		font-size: 14px;
+	}
+}
+
+// SETTINGS PAGE END =============================================
+
+// ABOUT AUTOR ==================================================
+
+.profile__status {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #707070;
+	font-size: 13px;
+	font-weight: 400;
+	width: 80px;
+	padding: 6px 9px 5px 25px;
+	text-align: center;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		left: 10px;
+		top: 8px;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+	}
+}
+.profile-on::before {
+	background-color: $booger;
+}
+.profile-off::before {
+	background-color: $tomato;
+}
+.profile-on {
+	display: block;
+	.profile-off {
+		display: none;
+	}
+}
+.profile-off {
+	display: block;
+	.profile-on {
+		display: none;
+	}
+}
+.about-autor {
+	&__wrap {
+		display: flex;
+	}
+	&__aside {
+		max-width: 270px;
+		width: 100%;
+		margin-right: 30px;
+	}
+	&__content {
+		width: 100%;
+	}
+	&__social-link {
+		margin-bottom: 25px;
+	}
+	&__link {
+		margin-bottom: 30px;
+	}
+	&__message {
+		margin-bottom: 17px;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		color: #fff;
+		background-color: $slate;
+		box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+		padding: 18px 10px;
+		position: relative;
+		text-align: center;
+		cursor: pointer;
+		&::before {
+			content: "\f003";
+			@include icon;
+			position: absolute;
+			left: 53px;
+			top: 16px;
+			font-size: 16px;
+		}
+	}
+	&__following {
+		margin-bottom: 17px;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		color: #fff;
+		font-weight: 700;
+		background-color: $booger;
+		box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+		padding: 18px 10px;
+		text-align: center;
+		cursor: pointer;
+	}
+	&__banner {
+		width: 100%;
+		height: auto;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		margin-bottom: 30px;
+		padding: 19px;
+	}
+	&__banner-images {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 830px;
+		height: 310px;
+	}
+	&__data {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+	}
+	&__data-item {
+		width: 25%;
+		padding: 20px 20px;
+		text-align: center;
+		& + .about-autor__data-item {
+			border-left: 1px solid #ccc;
+		}
+	}
+	&__data-title {
+		font-size: 14px;
+		color: #344045;
+		margin-bottom: 9px;
+	}
+	&__data-content {
+		font-size: 14px;
+		color: #969696;
+	}
+	&__data-price {
+		font-size: 14px;
+		color: #000;
+	}
+}
+.about-product__tabs.settings__tabs.about-autor__tabs {
+	position: relative;
+	.tab-i {
+		color: $silver-grey;
+		&::before {
+			position: absolute;
+			content: "";
+			@include icon;
+			font-size: 14px;
+			color: #d0d0d0;
+		}
+	}
+	.i-about::before {
+		content: "\f007";
+	}
+	.i-products::before {
+		content: "\f0f2";
+	}
+	.i-message::before {
+		content: "\f003";
+	}
+	.i-customer::before {
+		content: "\f0e6";
+	}
+	.i-followers::before {
+		content: "\f0c0";
+	}
+	.tabs__content {
+		padding: 40px 43px 25px;
+		border: 1px solid #ccc;
+	}
+	.tab-item__title {
+		font-size: 20px;
+		font-weight: 700;
+		color: $bg-dark;
+		margin-bottom: 25px;
+	}
+	.tab-item__text {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $silver-grey;
+		margin-bottom: 40px;
+	}
+	.tab-item__box {
+		display: flex;
+		justify-content: space-between;
+	}
+	.tab-item__skills {
+		font-size: 16px;
+		color: $bg-dark;
+		font-style: italic;
+		margin-bottom: 15px;
+	}
+	.tab-item__number {
+		font-size: 16px;
+		font-weight: 700;
+		color: $bg-dark;
+	}
+	.tab-item__line {
+		width: 100%;
+		height: 15px;
+		border-radius: 3px;
+		background-color: #f4f4f4;
+		margin-bottom: 25px;
+		span {
+			display: block;
+			height: 15px;
+			border-radius: 3px;
+			background-image: url(../images/skills-line-bg.jpg);
+			background-repeat: repeat;
+		}
+	}
+}
+
+// ABOUT AUTOR END ==============================================
 
 // =======================
 

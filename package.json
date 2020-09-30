@@ -23,6 +23,7 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-webp": "^4.0.1",
 		"ion-rangeslider": "^2.3.1",
+		"jquery-form-styler": "^2.0.2",
 		"mixitup": "^3.3.1",
 		"normalize.css": "^8.0.1",
 		"rateyo": "^2.3.5",
