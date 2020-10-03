@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Setting Personal Info Page</title>
+	<title>Withdrawals</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@700&display=swap"
 		rel="stylesheet">
@@ -307,7 +307,7 @@
 							</li>
 							<li>
 								<span>
-									Settings
+									Withdrawals
 								</span>
 							</li>
 						</ul>
@@ -315,331 +315,97 @@
 				</div>
 			</div>
 
-			<section class="settings">
+			<section class="withdrawals">
 				<div class="container">
-					<div class="about-product__tabs settings__tabs">
-						<div class="tabs">
-							<span class="angle-right tab active" data-id="1">Personal Information</span>
-							<span class="angle-right tab" data-id="2">Profile</span>
-							<span class="angle-right tab" data-id="3">Badges</span>
-							<span class="angle-right tab" data-id="4">E-mail Settings</span>
-							<span class="angle-right tab" data-id="5">Social Network</span>
+					<div class="withdrawals__inner">
+						<div class="withdrawals-earnings withdrawals__col">
+							<div class="withdrawals-earnings__ineer">
+								<div class="head-title__page">Withdrawals Earnings</div>
+								<form class="withdrawals-earnings__content">
+									<div class="withdrawals-earnings__line"><label>Amount to Withdraw ($2000.00 Maximum) <span>*</span>
+											<input type="text" placeholder="Enter the amount you want to withdraw..." required></label>
+									</div>
+									<div class="withdrawals-earnings__line"><label>Choose your Withdraw Method <span>*</span>
+											<select class="withdrawals-earnings__select">
+												<option>Select Your Card</option>
+												<option>Select Your Card</option>
+											</select></label>
+									</div>
+									<div class="withdrawals-earnings__line"><label>Your Account Name <span>*</span>
+											<select>
+												<option>Select Your Card</option>
+												<option>Select Your Card</option>
+											</select></label>
+									</div>
+									<div class="withdrawals-earnings__line"><label>Confirm Your Password <span>*</span>
+											<input type="text" placeholder="Select Your Card" required></label>
+									</div>
+									<button type="submit">Request Withdrawal</button>
+								</form>
+							</div>
 						</div>
-						<div class="tabs__content">
-							<div class="tab-item active-tab" id="1">
-								<form class="upload__form">
-									<div class="upload__inner">
-										<div class="head-title__page">
-											Personal Information
-										</div>
-										<div class="upload__inner-content">
-
-											<div class="upload__inner-line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Country</label>
-												<select class="upload__select">
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>City</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-
-											<button type="submit">Update</button>
+						<div class="withdrawals-hustory withdrawals__col">
+							<div class="withdrawals-hustory__inner">
+								<div class="head-title__page">Withdrawal History</div>
+								<div class="withdrawals-hustory__content">
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">200$</div>
+										<div class="withdrawals-hustory__payment withdrawals-hustory__panding">
+											Panding
 										</div>
 									</div>
-								</form>
-							</div>
-							<div class="tab-item" id="2">
-								<form class="upload__form">
-									<div class="upload__inner">
-										<div class="head-title__page">
-											Profile
-										</div>
-										<div class="upload__inner-content">
-
-											<div class="upload__inner-line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Country</label>
-												<select class="upload__select">
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>City</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-
-											<button type="submit">Update</button>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">100$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
 										</div>
 									</div>
-								</form>
-							</div>
-							<div class="tab-item" id="3">
-								<form class="upload__form">
-									<div class="upload__inner">
-										<div class="head-title__page">
-											Badges
-										</div>
-										<div class="upload__inner-content">
-
-											<div class="upload__inner-line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Country</label>
-												<select class="upload__select">
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>City</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-
-											<button type="submit">Update</button>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">200$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
 										</div>
 									</div>
-								</form>
-							</div>
-							<div class="tab-item" id="4">
-								<form class="upload__form">
-									<div class="upload__inner">
-										<div class="head-title__page">
-											E-mail Settings
-										</div>
-										<div class="upload__inner-content">
-
-											<div class="upload__inner-line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Country</label>
-												<select class="upload__select">
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>City</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-
-											<button type="submit">Update</button>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">100$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
 										</div>
 									</div>
-								</form>
-							</div>
-							<div class="tab-item" id="5">
-								<form class="upload__form">
-									<div class="upload__inner">
-										<div class="head-title__page">
-											Social Network
-										</div>
-										<div class="upload__inner-content">
-
-											<div class="upload__inner-line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Country</label>
-												<select class="upload__select">
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>City</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-
-											<div class="upload__inner-line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-
-											<button type="submit">Update</button>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">200$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
 										</div>
 									</div>
-								</form>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">100$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
+										</div>
+									</div>
+									<div class="withdrawals-hustory__line">
+										<time class="withdrawals-hustory__data">Dec 26th,2016</time>
+										<div class="withdrawals-hustory__email">Psdboss@paypal.com</div>
+										<div class="withdrawals-hustory__price">200$</div>
+										<div class="withdrawals-hustory__payment  withdrawals-hustory__paid">
+											Paid
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>

@@ -23,6 +23,13 @@ body {
 }
 // =======================
 
+@font-face {
+	font-family: "Myriad Pro Regular";
+	src: url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
