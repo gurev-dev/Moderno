@@ -220,8 +220,8 @@
 				<div class="header__menu">
 					<div class="container">
 						<nav class="menu">
-							<div class="menu__btn icon-navicon"></div>
-							<ul class="menu__list">
+							<div class="menu__btn icon-navicon" id="btn"></div>
+							<ul class="menu__list" id="list">
 								<li>
 									<a href="#">
 										Home
@@ -329,29 +329,32 @@
 								<div class="aside__title">
 									About Author
 								</div>
-								<div class="about-product__profile">
-									<div class="profile__images">
-										<img src="images/content/autor-avatar.jpg" alt="">
-									</div>
-									<div class="profile__info">
-										<div class="about-product__name">
-											PsdBoss
+								<div class="aside__inner">
+									<div class="about-product__profile">
+										<div class="profile__images">
+											<img src="images/content/autor-avatar.jpg" alt="">
 										</div>
-										<div class="profile__status profile-on">Online</div>
+										<div class="profile__info">
+											<div class="about-product__name">
+												PsdBoss
+											</div>
+											<div class="profile__status profile-on">Online</div>
+										</div>
 									</div>
+									<ul class="about-product__awards">
+										<li class="icon-meh-o shield" style="background-image: url(images/icons/shield-yellow.png);">
+										</li>
+										<li class="icon-pagelines shield" style="background-image: url(images/icons/shield-red.png);">
+										</li>
+										<li class="icon-flash shield" style="background-image: url(images/icons/shield-blue.png);">
+										</li>
+										<li class="icon-foursquare shield" style="background-image: url(images/icons/shield-green.png);">
+										</li>
+										<li class="icon-yen shield" style="background-image: url(images/icons/shield-grey.png);">
+										</li>
+									</ul>
 								</div>
-								<ul class="about-product__awards">
-									<li class="icon-meh-o shield" style="background-image: url(images/icons/shield-yellow.png);">
-									</li>
-									<li class="icon-pagelines shield" style="background-image: url(images/icons/shield-red.png);">
-									</li>
-									<li class="icon-flash shield" style="background-image: url(images/icons/shield-blue.png);">
-									</li>
-									<li class="icon-foursquare shield" style="background-image: url(images/icons/shield-green.png);">
-									</li>
-									<li class="icon-yen shield" style="background-image: url(images/icons/shield-grey.png);">
-									</li>
-								</ul>
+
 							</div>
 
 							<ul class="footer__social-link about-autor__social-link">
@@ -369,7 +372,7 @@
 
 						<div class="about-autor__content">
 							<div class="about-autor__banner">
-								<div class="about-autor__banner-images" style="		background-image: url(../images/content/banner.jpg);">
+								<div class="about-autor__banner-images" style="background-image: url(images/content/banner.jpg)">
 								</div>
 							</div>
 
@@ -686,7 +689,7 @@
 								<div class="footer__form-title">
 									Newsletter Sign Up!
 								</div>
-								<form><input type="text" placeholder="E-mail Address">
+								<form><input type="email" placeholder="E-mail Address">
 									<button type="submit"></button>
 								</form>
 							</div>
